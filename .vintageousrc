@@ -1,0 +1,76 @@
+
+
+let mapleader=<space>
+
+" Enter command line mode 
+"nnoremap <space> :
+
+" remap directional keys
+noremap j h
+noremap k k
+noremap l j
+noremap ; l
+
+noremap <space><S-Space>
+" == View Scrolling ==
+noremap K <C-y>
+noremap L <C-e>
+
+" == Next/Previous Occurance ==
+noremap h n
+noremap H N
+
+" == Find/Till ==
+"noremap t t
+"noremap T T
+noremap y f
+noremap Y F
+
+" == Insert/Append ==
+nnoremap n i
+nnoremap N I
+" == I/A to begin/end of line ==
+nnoremap m a
+nnoremap M A
+
+" == Change ==
+noremap f c
+
+" == Paste ==
+nnoremap v p
+nnoremap V P
+noremap c y
+noremap C Y
+
+" == Word-wise movements ==
+nnoremap u gE
+nnoremap i B
+nnoremap o E
+nnoremap p W
+" == WORD-wise movements ==
+nnoremap U ge
+nnoremap I b
+nnoremap O e
+nnoremap P w
+
+" == Move within a line ==
+nnoremap gj ^
+nnoremap g; g_
+nnoremap gJ 0
+nnoremap g: $
+
+onoremap gj ^
+onoremap g; g_
+onoremap gJ 0
+onoremap g: $
+
+" == Move within file (begin/end) ==
+nnoremap gk gg
+nnoremap gl G
+
+" == Insert on line above/below ==  
+nnoremap <leader>l o
+nnoremap <leader>k O
+
+" == Marks ==
+nnoremap e m
